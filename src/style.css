@@ -1,0 +1,256 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+              url('./assets/pixelcut-export.png') bottom center / cover no-repeat;
+}
+
+/* Navbar */
+nav {
+  background: #404040 !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.8);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  font-size: large;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 550;
+  padding: 0.5rem 1rem;
+  transition: 0.3s ease-in-out;
+}
+
+nav a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+
+nav h2 {
+  font-size: 2.5rem;
+  color: #fff;
+  margin: 10px 20px;
+}
+
+/* Browse Books Section */
+.browse-books-container {
+  text-align: center;
+  padding: 0 2rem;
+  max-width: 100%;
+  margin: auto;
+}
+
+.browse-books-title {
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Search and Filter */
+.search-filter-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.search-input,
+.category-select {
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  width: 250px;
+  transition: 0.3s ease-in-out;
+}
+
+.search-input:focus,
+.category-select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Books Grid */
+.books-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 3rem;
+  padding: 2rem;
+  margin: 0 auto;
+}
+
+/* Book Card */
+.book-card {
+  background: rgba(255, 255, 255, 0.6);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.book-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Book Image */
+.book-image {
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+}
+
+/* Book Titles and Author */
+.book-link {
+  text-decoration: none !important;
+  color: inherit;
+}
+
+.book-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #404040;
+}
+
+.book-author {
+  font-size: 1rem;
+  color: #737373;
+}
+
+/* Book Details Section */
+.book-details-container {
+  max-width: 900px;
+  margin: 50px auto;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.book-image-container {
+  flex: 1;
+  text-align: center;
+}
+
+.book-image-container .book-image {
+  height: 400px;
+}
+
+.book-info {
+  flex: 2;
+  padding: 10px;
+}
+
+/* Book Titles Styling */
+.books-container .book-title {
+  font-size: 1.2rem;
+}
+
+.book-details-container .book-title {
+  font-size: 2rem;
+  color: #000;
+}
+
+/* Book Author Styling */
+.books-container .book-author,
+.book-details-container .book-author {
+  font-size: 1rem;
+}
+
+.book-details-container .book-author {
+  font-size: 1.5rem;
+}
+
+/* Book Description */
+.book-description {
+  font-size: 1.15rem;
+  line-height: 1.25;
+  color: #303030;
+  margin: 10px 0;
+}
+
+/* Book Category */
+.book-category {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #444;
+}
+
+/* No Books Found Message */
+.no-books-found {
+  font-size: 1.2rem;
+  color: #ff4c4c;
+  font-weight: bold;
+}
+
+/* Forms */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: auto;
+  align-items: center;
+}
+
+input {
+  background: rgba(255, 255, 255, 0.2);
+  width: 80%;
+  padding: 0.75rem;
+  border: 1px solid #545454;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #fff;
+  text-align: center;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Buttons */
+/* Buttons */
+button, .back-button, .back-to-home {
+  background: #2563eb;
+  color: white;
+  border: none;
+  font-size: large;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 30%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+button:hover, .back-button:hover, .back-to-home:hover,
+button:focus, .back-button:focus, .back-to-home:focus {
+  background: #3b82f6;
+  transform: translateY(-5px);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
