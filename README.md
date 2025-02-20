@@ -1,8 +1,8 @@
 ### 📚 Online Library  
 A **responsive online library** web application where users can browse, add, and view book details. Built with **React, React Router, and Tailwind CSS**.  
 
-Here's the GitHub Link of this project: https://github.com/EddieExe/Online-Library/
 ---
+Here's the GitHub Link of this project: https://github.com/EddieExe/Online-Library/
 
 ## 🚀 Features  
 ✅ Browse a collection of books  
