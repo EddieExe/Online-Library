@@ -1,5 +1,5 @@
 import { useState, useContext } from "react";
-import { useNavigate } from "react-router-dom"; // Import useNavigate
+import { useNavigate } from "react-router-dom";
 import { BooksContext } from "../context/BooksContext";
 
 const AddBook = () => {
@@ -9,19 +9,18 @@ const AddBook = () => {
   const [category, setCategory] = useState("");
   const [description, setDescription] = useState("");
 
-  const navigate = useNavigate(); // Initialize navigation
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (title && author && category && description) {
-      addBook({ title, author, category, description }); // Add book to context
+      addBook({ title, author, category, description });
       setTitle("");
       setAuthor("");
       setCategory("");
       setDescription("");
       alert("Book added successfully!");
 
-      // Redirect user to http://localhost:5174/books
       navigate("/books");
     }
   };
